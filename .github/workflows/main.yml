@@ -1,8 +1,8 @@
 name: Update Semver
 on:
   push:
-    branches-ignore:
-      - '**'
+    branches: 
+      - dev
     tags:
       - 'v*.*.*'
 jobs:
