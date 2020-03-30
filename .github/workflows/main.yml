@@ -4,7 +4,7 @@ on:
     branches: 
       - dev
     tags:
-      - 'v0.0.0'
+      - 'v*.*.*'
 jobs:
   update-semver:
     runs-on: ubuntu-latest
