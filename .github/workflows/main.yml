@@ -1,0 +1,15 @@
+name: Update Semver
+on:
+  push:
+    branches: 
+      - dev
+    tags:
+      - 'v0.0.0'
+jobs:
+  update-semver:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: haya14busa/action-update-semver@v1
+        with:
+          major_version_tag_only: true  
